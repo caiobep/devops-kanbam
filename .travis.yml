@@ -20,7 +20,7 @@ before_deploy:
 
 deploy:
   provider: script
-  script: netlify deploy -s $NETLIFY_SITE_ID -a $NETLIFY_ACCESS_TOKEN -d ./build --json --message "Travis-CI Deploy"
+  script: netlify deploy -s $NETLIFY_SITE_ID -a $NETLIFY_ACCESS_TOKEN -d ./build --json --message "Travis-CI Deploy [$TRAVIS_BRANCH:$TRAVIS_TAG] - $TRAVIS_COMMIT" --prod
   skip_cleanup: true
   on:
     branch: master

@@ -2,17 +2,20 @@
 
 > A Minimal Kanban for VSTS
 
+[![Build Status](https://travis-ci.org/caiobep/devops-kanban.svg?branch=master)](https://travis-ci.org/caiobep/devops-kanban)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6c692f33-19e2-430f-a9c1-ef296fb18336/deploy-status)](https://app.netlify.com/sites/serene-beaver-89e6e1/deploys)
+
 ## Features
 
 - Taks View
-  - [] Tasks Card
-  - [] Card Color Based On Status
+  -[] Tasks Card
+  -[] Card Color Based On Status
 
 - Sprint View
-  - [] Points Left
-  - [] Days Left
-  - [] Points Per Day Left
-  - [] Card Color Based on Task Status
+  -[] Points Left
+  -[] Days Left
+  -[] Points Per Day Left
+  -[] Card Color Based on Task Status
 
 ## Getting Started
 
