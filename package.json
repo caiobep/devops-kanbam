@@ -1,22 +1,17 @@
 {
-  "name": "devops-kanbam",
+  "name": "devops-kanban",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@types/jest": "24.0.14",
-    "@types/node": "12.0.8",
-    "@types/react": "16.8.20",
-    "@types/react-dom": "16.8.4",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "typescript": "3.5.2"
-  },
+  "author": "Caio Amaral Correa <caiobep@me.com>",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test:ci": "react-scripts test --coverage --reporters=default --reporters=jest-junit",
+    "test:no-watch": "react-scripts test --watchAll=false",
+    "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
+    "eject": "react-scripts eject",
+    "lint": "eslint --fix \"src/*.+(js|jsx|ts|tsx)\" "
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +27,36 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "typescript": "3.5.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "~8.0.0",
+    "@testing-library/react": "~8.0.1",
+    "@types/jest": "24.0.14",
+    "@types/node": "12.0.8",
+    "@types/react": "16.8.20",
+    "@types/react-dom": "16.8.4",
+    "@typescript-eslint/eslint-plugin": "~1.10.2",
+    "@typescript-eslint/parser": "~1.10.2",
+    "eslint": "~5.16.0",
+    "eslint-config-prettier": "~5.0.0",
+    "eslint-config-standard": "~12.0.0",
+    "eslint-plugin-import": "~2.17.3",
+    "eslint-plugin-node": "~9.1.0",
+    "eslint-plugin-prettier": "~3.1.0",
+    "eslint-plugin-promise": "~4.1.1",
+    "eslint-plugin-react": "~7.13.0",
+    "eslint-plugin-react-hooks": "~1.6.0",
+    "eslint-plugin-standard": "~4.0.0",
+    "husky": "~2.4.1",
+    "jest-dom": "~3.5.0",
+    "jest-junit": "~6.4.0",
+    "prettier": "~1.18.2",
+    "prettier-eslint": "~9.0.0"
   }
 }
